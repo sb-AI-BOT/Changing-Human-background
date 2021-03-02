@@ -24,7 +24,7 @@ parser = argparse.ArgumentParser(description='bg_removal')
 parser.add_argument('--src_img', required=True, help='Path for foreground image')
 parser.add_argument('--bg_img', required=True, help='Path for background image')
 parser.add_argument('--out', required=False, default="./out/")
-parser.add_argument('--model', required=False, default="./models/human_ckpt.pth")
+parser.add_argument('--model', required=False, default="./models/human.pth")
 args = parser.parse_args()
 
 def find_human(img):
